@@ -9,6 +9,18 @@ function init() {
 </header>
 <div>
 <div id="content" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6076330206220198"
+     crossorigin="anonymous"></script>
+<!-- firstthopdb -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6076330206220198"
+     data-ad-slot="7549417800"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 </div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
