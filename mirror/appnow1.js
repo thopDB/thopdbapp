@@ -22,6 +22,7 @@ function init() {
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script></div>
+<script id="_wauq60">var _wau = _wau || []; _wau.push(["tab", "wez6lp892v", "q60", "left-middle"]);</script><script async src="//waust.at/t.js"></script>
 </div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
