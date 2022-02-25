@@ -8,7 +8,7 @@ function init() {
    </div>
 </header>
 <div>
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6076330206220198"
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6076330206220198"
      crossorigin="anonymous"></script>
 <!-- firstthopdb -->
 <ins class="adsbygoogle"
@@ -19,8 +19,20 @@ function init() {
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+</script></center>
 <div id="content" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
+<center><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6076330206220198"
+     crossorigin="anonymous"></script>
+<!-- firstthopdb -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6076330206220198"
+     data-ad-slot="7549417800"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>
 <script id="_wauq60">var _wau = _wau || []; _wau.push(["tab", "wez6lp892v", "q60", "left-middle"]);</script><script async src="//waust.at/t.js"></script>
 </div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
