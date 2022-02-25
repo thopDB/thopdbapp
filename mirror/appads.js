@@ -9,24 +9,6 @@ function init() {
 </header>
 <div>
 <div id="content" style="padding-top: ${UI.header_padding}px;${UI.fixed_footer ?' padding-bottom: clamp(170px, 100%, 300px);': ''}">
-<style>
-#FloatAdx {
-    right: 50%; /* Change this to switch left or right */
-    margin-right: 515px; /* Adjust this value with your Blog width */
-    top: 15px;
-    position: fixed;
-    background: rgba(255, 255, 255, 0.59);
-    height: 605px;
-    width: 160px;
-}
-
-@media only screen and (max-width:1350px) {
-    #FloatAdx {
-        display: none
-    }
-}
-</style>
-<div id="FloatAdx">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6076330206220198"
      crossorigin="anonymous"></script>
 <!-- firstthopdb -->
@@ -38,7 +20,7 @@ function init() {
      data-full-width-responsive="true"></ins>
 <script>
      (adsbygoogle = window.adsbygoogle || []).push({});
-</script></div>
+</script>
 </div>
 <div class="modal fade" id="SearchModel" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="SearchModelLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
