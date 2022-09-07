@@ -1,0 +1,328 @@
+.wrapper {
+  background: #50a3a2;
+  background: -webkit-gradient(linear, left top, right bottom, from(#50a3a2), to(#53e3a6));
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+@keyframes flipInX {
+    from {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0
+    }
+
+    40% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in
+    }
+
+    60% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+        opacity: 1
+    }
+
+    80% {
+        -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+        transform: perspective(400px) rotate3d(1, 0, 0, -5deg)
+    }
+
+    to {
+        -webkit-transform: perspective(400px);
+        transform: perspective(400px)
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none
+    }
+}
+
+#arlinablock ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;
+    height: 5px
+}
+
+#arlinablock ::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .15);
+    border-radius: 10px
+}
+
+#arlinablock ::-webkit-scrollbar-track {
+    background-color: transparent
+}
+
+#arlinablock ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .25)
+}
+
+#arlinablock {
+    background: linear-gradient(
+    45deg, rgb(34 34 34 / 62%), #526bdfab, rgb(77 144 254 / 58%), #22324c73, rgb(0 102 218 / 62%)) 0 0 / 1000% no-repeat, url(/assets/images/bg-adblock.jpg) 0 0 / cover no-repeat;
+    -webkit-animation: gradientAnimation 40s ease infinite;
+    animation: gradientAnimation 40s ease infinite;
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0px;
+    bottom: 0;
+    overflow: auto;
+    height: auto;
+    z-index: 999999;
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px)
+}
+
+@-webkit-keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+@keyframes gradientAnimation {
+	0%   { background-position: 0% 30%, 0 0;}
+	50%  { background-position: 100% 70%, 0 0;}
+	100% { background-position: 0% 30%, 0 0;}
+}
+
+#arlinablock .header {
+    margin: 20px 0 20px 0;
+    position: relative;
+    top: initial;
+    left: initial
+}
+
+#arlinablock .header h2 {
+    color: #fb0505;
+    font-size: 30px;
+    font-variant: small-caps;
+}
+
+#arlinablock .inner {
+    background: #fff;
+    border-radius: 12px;
+    color: #222;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 640px;
+    padding: 20px;
+    margin: 7% auto 7% auto;
+    animation: flipInX 1s;
+    margin-top: 15%;
+}
+
+#arlinablock button {
+    position: relative;
+    overflow: hidden;
+    padding: 6px 20px;
+    background: #526bdf;
+    color: #fff;
+    margin: 20px 5px;
+    cursor: pointer;
+    border-radius: 99em;
+    font-size: 13px;
+    font-weight: 500;
+    border: 2px solid #526bdf;
+    transition: initial;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.01), 0 5px 10px rgba(0, 0, 0, 0.1)
+}
+
+#arlinablock button:hover {
+    background: #fff;
+    color: #213a4c;
+    outline: none;
+    border-color: #213a4c
+}
+
+#arlinablock button.active,
+#arlinablock button:hover.active {
+    background: #0066da;
+    color: #fff;
+    border-color: #0066da;
+    outline: none
+}
+
+#arlinablock .fixblock {
+    background: #f7f9f8;
+    text-align: left;
+    color: #000;
+    padding: 20px;
+    height: 250px;
+    overflow: auto;
+    line-height: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05)
+}
+
+#arlinablock .fixblock div {
+    display: none
+}
+
+#arlinablock .fixblock div.active {
+    display: block;
+    animation: fadeInUp .5s
+}
+
+#arlinablock ol {
+    margin-left: 20px
+}
+
+#arlinablock button:after,
+#arlinablock button:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    background-repeat: no-repeat;
+    transition: all .3s
+}
+
+#arlinablock button:before {
+    height: 0;
+    top: 0;
+    bottom: initial
+}
+
+#arlinablock button:hover:after {
+    height: 0
+}
+
+#arlinablock button:hover:before {
+    height: 50%
+}
+
+@media(max-width:768px) {
+    #arlinablock .inner {
+        width: calc(100% - 20px);
+        margin: 10px auto;
+        padding: 15px
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 700;
+    line-height: normal;
+}
+
+h1 {
+    font-size: 200%
+}
+
+h2 {
+    font-size: 180%
+}
+
+h3 {
+    font-size: 160%
+}
+
+h4 {
+    font-size: 140%
+}
+
+h5 {
+    font-size: 120%
+}
+
+h6 {
+    font-size: 100%
+}
+
+.post-body h1 {
+    font-size: 200%
+}
+
+.post-body h2 {
+    font-size: 180%
+}
+
+.post-body h3 {
+    font-size: 160%
+}
+
+.post-body h4 {
+    font-size: 140%
+}
+
+.post-body h5 {
+    font-size: 120%
+}
+
+.post-body h6 {
+    font-size: 100%
+}
+
+a img {
+    border: none;
+    border-width: 0;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+body {
+  background: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  line-height: normal;
+}
+
+.container {
+  max-width: 768px;
+  margin: 4% auto;
+  padding: 40px;
+  background: #fff;
+  color: #222;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container h1,
+.container h2 {
+  display: block;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.container h2 {
+  margin-top: 30px;
+}
